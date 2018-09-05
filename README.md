@@ -13,7 +13,8 @@ To start the proxy all you need to do is:
 
 The container's log output (`docker logs mtproto-proxy`) will contain the links to paste into the Telegram app:
 
-`####
+```
+ ####
  #### Telegram Proxy
  ####
 
@@ -27,7 +28,7 @@ The container's log output (`docker logs mtproto-proxy`) will contain the links 
  [*]   Tag: no tag
  [*]   External IP: 1.2.3.4
  [*]   Make sure to fix the links in case you run the proxy on a different port.
-`
+```
 
 The secret will persist across container upgrades in a volume.
 It is a mandatory configuration parameter: if not provided, it will be generated automatically at container start.
