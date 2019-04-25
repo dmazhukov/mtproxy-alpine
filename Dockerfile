@@ -17,7 +17,7 @@ FROM alpine:3.8
 LABEL maintainer="Alex Bogatikov <alexey.bogatikov@gmail.com>" \
       description="Telegram Messenger MTProto zero-configuration proxy server."
 
-ENV HTTP_PORT=${PORT}
+ENV HTTP_PORT=8080
 ENV STATISTICS_PORT 2398
 
 RUN apk add --no-cache curl \
